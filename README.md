@@ -28,19 +28,22 @@
 
 #### Basic Setup
 
-1. Grab the latest [release](https://github.com/eaaasun/startpage/releases/latest)
-2. Unzip files and move to a convenient location (e.g. Documents)
-3. Go into your browser settings (Firefox: `about:preferences`, Chrome/chromium-based: `chrome://settings/`)
-4. Set the homepage to `file:///[PATH TO STARTPAGE]/index.html` (example: `file:///D:/documents/startpage/index.html`)
-5. Open the homepage and check if things are working. There will be no weather data, and we will fix as part of the next step.
-6. Open index.html in your code editor of choice.
-   1. Find the `<section>` elements and replace the `website text`, `section header`, and `https://example.com` with your own links and text. You can copy-paste or delete the `<section>` elements to fit your needs (I recommend a maximum of 3-4 sections).
-   2. If you want the weather to be displayed, leave the `weather` variable as-is. Otherwise, change it to `false` and skip the rest of this step.
-   3. In the `<script>` tag, replace the `[API KEY]` with your own OpenWeatherMap API key. (See [here](#getting-an-openweathermap-api-key) for instructions.)
-   4. In the `<script>` tag, replace the `lon` and `lat` variables with your own longitude and latitude respectively.
-   5. In the `<script>` tag, change the `units` variable to either `imperial` or `metric`.
-7. If you want to replace the image, replace the `image.gif` file with your own image/gif of choice.
-8. You should now have a working startpage!
+#### 🏡 As Home Page
+
+1. Fork this repo
+2. Enable the Github Pages service `Settings → GitHub Pages → Source [master branch] → Save`
+3. Set it as Home Page:
+   - Click the menu button. and select Options. Preferences.
+   - Click the Home panel.
+   - Click the menu next to Homepage and new windows and choose to show custom URLs and add your `Github Pages link`
+
+#### ➕ As New Tab
+
+You can use different Add-ons/Extensions for it
+
+- If you use Firefox: [Custom New Tab Page](https://addons.mozilla.org/en-US/firefox/addon/custom-new-tab-page/?src=search) and make sure you enable "Force links to open in the top frame (experimental)" in the extension's preferences page.
+- If you use Chromium (Brave, Vivaldi, Chrome): [Custom New Tab URL](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia)
+
 
 #### Getting an OpenWeatherMap API Key
 1. Go to [OpenWeatherMap](https://home.openweathermap.org/users/sign_up) and sign up.
@@ -75,7 +78,6 @@ Use as a new tab (only step 3 to disable animations):
 - Browser: Firefox
 - Theme: [Nord - Firefox Theme](https://www.deviantart.com/dpcdpc11/art/Nord-for-Firefox-837860916)
 - Font: Product Sans
-- Wallpaper: You can't have it
 
 ## Misc. Info
 - Startpage Font: Source Code Pro
