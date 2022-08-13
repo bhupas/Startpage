@@ -15,6 +15,16 @@
   };
 
   const COMMANDS = {
+
+    a: {
+      name: 'Anime',
+      searchTemplate: '/search?keyword=q={}',
+      suggestions: [
+        'a/home',
+        'a/movie',
+      ],
+      url: 'https://zoro.to/home',
+    },
     c: {
       name: 'Calendar',
       searchTemplate: '/calendar/u/0/r/search?q={}',
